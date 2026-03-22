@@ -1,1 +1,4 @@
-console.log("Oh My AI Translator content script loaded");
+import { Bootstrap } from "./bootstrap";
+
+const bootstrap = new Bootstrap();
+bootstrap.init();
