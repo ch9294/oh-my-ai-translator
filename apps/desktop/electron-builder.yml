@@ -1,0 +1,14 @@
+appId: com.ohmyaitranslator.desktop
+productName: Oh My AI Translator
+directories:
+  output: out
+  buildResources: build
+mac:
+  target:
+    - dmg
+win:
+  target:
+    - nsis
+linux:
+  target:
+    - AppImage

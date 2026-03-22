@@ -1,0 +1,23 @@
+{
+  "name": "@oh-my-ai-translator/desktop",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist out"
+  },
+  "dependencies": {
+    "@oh-my-ai-translator/shared-types": "workspace:*",
+    "@oh-my-ai-translator/shared-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12",
+    "electron-vite": "^3.1.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
