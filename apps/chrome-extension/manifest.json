@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Oh My AI Translator",
+  "version": "0.0.1",
+  "description": "AI 서비스를 활용한 웹, 동영상 번역 서비스",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "service_worker": "src/background/index.ts"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/index.ts"]
+    }
+  ]
+}

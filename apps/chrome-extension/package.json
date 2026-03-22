@@ -1,0 +1,22 @@
+{
+  "name": "@oh-my-ai-translator/chrome-extension",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@oh-my-ai-translator/shared-types": "workspace:*",
+    "@oh-my-ai-translator/shared-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.32",
+    "@types/chrome": "^0.0.304",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
